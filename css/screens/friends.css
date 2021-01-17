@@ -28,3 +28,24 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
+
+.friend-text {
+  color: black;
+}
+
+.friend-1 {
+  width: 205px;
+}
+
+.friend-3 {
+  font-size: 14px;
+}
+
+.friend-4 h6,
+.friend-5 h6 {
+  font-size: 14px;
+}
+
+.friend-6 {
+  margin-bottom: 100px;
+}
