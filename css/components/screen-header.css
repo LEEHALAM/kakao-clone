@@ -15,3 +15,12 @@
 .screen-header__icons span {
   margin-left: 25px;
 }
+
+.screen-header__icons .rel {
+  position: relative;
+}
+
+.cog-dot {
+  right: 20px;
+  top: 40px;
+}
