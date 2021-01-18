@@ -50,3 +50,43 @@
 .friend-6 {
   margin-bottom: 100px;
 }
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 130px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes badgeAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.badgeAni {
+  animation: badgeAnimation 2s linear infinite;
+}
