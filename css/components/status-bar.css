@@ -1,21 +1,14 @@
 @keyframes batteryAnimation {
   0% {
-  }
-
-  80%,
-  100% {
-    transform: translateY(-420%);
-  }
-  0% {
+    opacity: 0;
     color: #eb596e;
   }
-  40% {
+  50% {
+    opacity: 0.5;
     color: #ffe227;
   }
-  80% {
-    color: #00af91;
-  }
   100% {
+    opacity: 1;
     color: #007965;
   }
 }
@@ -52,7 +45,7 @@
 
 .batteryAni {
   width: 35px;
-  height: 17px;
+  height: 16px;
   overflow: hidden;
 }
 
@@ -62,6 +55,36 @@
 
 .status-bar__column .battery {
   animation: batteryAnimation 5s linear infinite;
+}
+
+.batterys {
+  position: relative;
+}
+.battery {
+  position: absolute;
+}
+.battery1 {
+  z-index: 1;
+}
+
+.battery2 {
+  z-index: 2;
+  animation-delay: 1s;
+}
+
+.battery3 {
+  z-index: 3;
+  animation-delay: 2s;
+}
+
+.battery4 {
+  z-index: 4;
+  animation-delay: 3s;
+}
+
+.battery5 {
+  z-index: 5;
+  animation-delay: 4s;
 }
 
 /* .status-bar__column .battery:nth-child(2) {
